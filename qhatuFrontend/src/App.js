@@ -8,12 +8,12 @@ import FormularioEditarProducto from "./components/jesus/formularioEditarProduct
 import FormularioNuevoProducto from "./components/jesus/formularioNuevoProducto"
 import PanelDetallesTienda from "./components/jesus/panelDetallesTienda"
 import CajaValoracion from "./components/Leonardo/cajaValoracion"
-
+import TiendaModels from "./models/tienda"
 export default function App() {
   return (
     <Container maxWidth="sm">
       <Box my={4}>
-        <CajaValoracion/>
+        <PanelDetallesTienda logeado={true} tienda={TiendaModels.tiendaEjemplo()}/>
       </Box>
     </Container>
   );
